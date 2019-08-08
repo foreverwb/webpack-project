@@ -51,6 +51,7 @@ module.exports = {
     filename: '[name]_[chunkhash:8].js'
   },
   mode: 'production', // process.env.NODE_ENV 的值为 production,
+  // mode: 'none', // production 默认开启tree-shaking
   module: {
     rules: [
       {
