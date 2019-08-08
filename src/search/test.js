@@ -1,10 +1,12 @@
 import React from 'react';
 
-export default function() {
-    return (
-        <div>
-            Dynamic import
-        </div>
-    )
-}
+const Test = () => {
+  return (
+    <div>
+      Dynamic import
+    </div>
+  );
+};
+
+export default Test
 

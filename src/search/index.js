@@ -1,35 +1,36 @@
-import React, {useState} from "react";
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
-import './index.less'
-import mio from './123.gif'
-import { a } from './tree-shaking' 
+import './index.less';
+import mio from './123.gif';
+import {a} from './tree-shaking';
 
 // tree-shaking 
-if(false) {
-  a()
+if (false) {
+  a();
 }
 
 const Search = () => {
-  const [state, setState] = useState({Test: null})
-  loadComponent = () => {
+  const [state, setState] = useState({Test: null});
+
+  const loadComponent = () => {
     import('./test.js').then((res) => {
-      setState({Test: res.default})
-    })
-  }
+      setState({Test: res.default});
+    });
+  };
   return (
     <div className="a">
       {
-        state.Test ? <Test /> : null
+        state.Test ? <state.Test /> : null
       }
-      <p onClick={this.loadComponent}>Mio Wang</p>
+      <p onClick={loadComponent}>Mio Wang</p>
       <img src={mio} alt="jingyan"/>
     </div>
-  )
+  );
 
-}
+};
 
 
 ReactDOM.render(
-  <Search />,
+  <Search/>,
   document.getElementById('root')
-)
+);
