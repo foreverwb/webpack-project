@@ -10,17 +10,17 @@ if (false) {
 }
 
 const Search = () => {
-  const [state, setState] = useState({Test: null});
+  const [state, setState] = useState({Text: null});
 
   const loadComponent = () => {
-    import('./test.js').then((res) => {
-      setState({Test: res.default});
+    import('./text.js').then((res) => {
+      setState({Text: res.default});
     });
   };
   return (
     <div className="a">
       {
-        state.Test ? <state.Test /> : null
+        state.Text ? <state.Text /> : null
       }
       <p onClick={loadComponent}>Mio Wang</p>
       <img src={mio} alt="jingyan"/>

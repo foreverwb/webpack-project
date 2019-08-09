@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Test = () => {
+const Text = () => {
   return (
     <div>
       Dynamic import
@@ -8,5 +8,5 @@ const Test = () => {
   );
 };
 
-export default Test
+export default Text
 
