@@ -1,8 +1,8 @@
 {
-  "name": "lib",
+  "name": "largetonum",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "lib-largeNumber",
+  "description": "largetonum",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
