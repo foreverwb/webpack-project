@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --config webpack.dev.js --open"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build:ssr": "webpack --config webpack.ssr.js"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +35,7 @@
     "eslint-config-airbnb": "^17.1.1",
     "eslint-loader": "^2.2.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "express": "^4.17.1",
     "file-loader": "^4.1.0",
     "glob": "^7.1.4",
     "html-webpack-plugin": "^3.2.0",
