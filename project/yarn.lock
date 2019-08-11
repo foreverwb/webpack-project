@@ -3835,6 +3835,11 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.npm.taobao.org/kind-of/download/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha1-ARRrNqYhjmTljzqNZt5df8b20FE=
 
+largetonum@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/largetonum/download/largetonum-1.0.3.tgz?cache=0&sync_timestamp=1565493459304&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flargetonum%2Fdownload%2Flargetonum-1.0.3.tgz#e8243b9b65a6a91d7b727c819ddd5dc292c1c789"
+  integrity sha1-6CQ7m2WmqR17cnyBnd1dwpLBx4k=
+
 last-call-webpack-plugin@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/last-call-webpack-plugin/download/last-call-webpack-plugin-3.0.0.tgz#9742df0e10e3cf46e5c0381c2de90d3a7a2d7555"
