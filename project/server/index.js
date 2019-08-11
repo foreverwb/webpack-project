@@ -1,10 +1,13 @@
 if (typeof window === 'undefined') {
   global.window = {};
 }
-
+const fs = require('fs');
+const path = require('path');
 const express = require('express');
 const { renderToString } = require('react-dom/server');
 const SSR = require('../dist/search-server');
+const tempalte = fs.readFileSync(path.join(__dirname, '../dist/search.html'), 'utf-8');
+const mock = require('./mock.json')
 
 const server = (port) => {
   const app = express();
@@ -24,17 +27,7 @@ const server = (port) => {
 server(process.env.PORT || 3001);
 
 const renderMarkup = (str) => {
-  return `<!doctype html>
-            <html lang="en">
-              <head>
-                <meta charset="UTF-8">
-                <meta name="viewport"
-                      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                <title>SSR</title>
-              </head>
-              <body>
-                <div id="root">${str}</div>
-              </body>
-            </html>`;
+  return tempalte
+          .replace('<!--HTML_PLACEHOLDER-->', str)
+          .replace('<!--INITIAL_MOCK_PLACEHOLDER-->', `<p>${mock.data.name}</p>`)
 };
