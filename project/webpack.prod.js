@@ -131,7 +131,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new FriendlyErrorsWebpackPlugin()
   ].concat(htmlWebpackPlugins),
-  // stats: 'errors-only', // 控制台打印
+  stats: 'errors-only', // 控制台打印
   // SplitChunksPlugin 提取react, react-dom 配置
   optimization: {
     splitChunks: {

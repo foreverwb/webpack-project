@@ -99,5 +99,5 @@ module.exports = {
     hot: true,
     stats: 'errors-only'
   },
-  devtool: 'source-map'
+  devtool: 'cheap-source-map'
 }
